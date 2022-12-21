@@ -1,0 +1,50 @@
+.todo-list {
+    position: relative;
+    left: -2px;
+    margin-top: 16px;
+    height: 30px;
+    width: 422px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    border: #000000 1px solid;
+    border-radius: 4px;
+    padding: 5px 20px;
+  }
+    
+  li {
+    list-style: none;
+    overflow-wrap: anywhere;
+    height: auto;
+    width: 176px;
+    font-family: 'Poppins', sans-serif;
+  }
+    
+  button {
+    padding: 3px 3px;
+    margin: 0 4px;
+    border-radius: 4px;
+    color: #000000;
+    border: none;
+    background-color: transparent;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .complete{
+    width: 25px;
+    position: relative;
+    top: 2px;
+  }
+  
+  .update{
+    width: 25px;
+  }
+  
+  .cancel{
+    width: 25px;
+    position: relative;
+    top: 2px;
+  }
