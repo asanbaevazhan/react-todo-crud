@@ -14,19 +14,25 @@ const TodoItem = ({ item, index, deleteTodoItem, completeTodoItem,
                 <button 
                 onClick={() => completeTodoItem(index)}
                 >
-                   <CheckCircleOutlined />
+                   <CheckCircleOutlined
+                   style={{ fontSize: '20px' }}
+                   />
                 </button>
 
                 <button 
                     onClick={() => updateTodoItem(index)}
                 >
-                    <EditOutlined />
+                    <EditOutlined 
+                            style={{ fontSize: '20px' }}
+                    />
                 </button>
 
                 <button 
                     onClick={() => deleteTodoItem(index)}
                 > 
-                   <DeleteOutlined />
+                   <DeleteOutlined 
+                    style={{ fontSize: '20px' }}
+                   />
                 </button>
             </div>
             

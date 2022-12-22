@@ -1,13 +1,17 @@
-import React from 'react' 
-
+import React, { useState, useEffect } from 'react'
 import './App.css'
 import TodoInput from './components/ToDoInput/ToDoInput.js';
 import TodoItem from './components/ToDoItem/ToDoItem.js';
 
 
 function App() {
-  const [todoItems, setTodoItems] = React.useState([])
-    
+  const initialState = JSON.parse(localStorage.getItem("todoItems")) || [];
+  const [todoItems, setTodoItems] = useState(initialState)
+
+  useEffect(() => {
+    localStorage.setItem("todoItems", JSON.stringify(todoItems));
+  }, [todoItems]);
+  
   const createTodoItem = (todo) => {
     const newTodoItems = [...todoItems, 
       { todo, 
@@ -47,7 +51,7 @@ function App() {
 
   return (
         <div className='app'>
-          <h1>todo</h1>
+          <h1>TODO LIST</h1>
           <TodoInput 
           createTodoItem={createTodoItem} 
           />

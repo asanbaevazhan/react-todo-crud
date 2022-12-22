@@ -15,7 +15,6 @@ const TodoInput = ({createTodoItem}) => {
         setValue("")
     }
 
-   
     return (
     <form onSubmit={handleSubmit}>
         

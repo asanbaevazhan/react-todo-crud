@@ -13,17 +13,17 @@
     border: #000000 1px solid;
     border-radius: 4px;
     padding: 5px 20px;
-  }
+}
     
-  li {
+li {
     list-style: none;
     overflow-wrap: anywhere;
     height: auto;
     width: 176px;
     font-family: 'Poppins', sans-serif;
-  }
+}
     
-  button {
+button {
     padding: 3px 3px;
     margin: 0 4px;
     border-radius: 4px;
@@ -31,20 +31,20 @@
     border: none;
     background-color: transparent;
     font-family: 'Poppins', sans-serif;
-  }
+}
   
-  .complete{
+.complete{
+    width: 55px;
+    position: relative;
+    top: 2px;
+}
+  
+.update{
+    width: 45px;
+}
+  
+.cancel{
     width: 25px;
     position: relative;
     top: 2px;
-  }
-  
-  .update{
-    width: 25px;
-  }
-  
-  .cancel{
-    width: 25px;
-    position: relative;
-    top: 2px;
-  }
+}
